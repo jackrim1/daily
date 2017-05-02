@@ -14,7 +14,8 @@ ActiveRecord::Schema.define(version: 20170501211936) do
 
   create_table "records", force: :cascade do |t|
     t.string   "title"
-    t.string   "description"
+    t.text     "description"
+    t.text     "gratitude"
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
